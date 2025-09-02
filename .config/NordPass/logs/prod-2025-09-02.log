@@ -1,0 +1,456 @@
+2025/09/02 04:13:47.778163 config.go:50: starting app. {"api_base_url":"https://api.nordpass.com","app_version":"4.453.4","os":"linux","os_arch":"amd64","tls_enabled":false,"version":"6.4.8"}
+2025/09/02 04:13:47.787573 remote.go:58: TIME-SYNC-REQUEST-TO-API
+2025/09/02 04:13:47.984828 remote.go:65: TIME-SYNC-RESPONSE-STATUS-FROM-API: 200.
+2025/09/02 04:13:47.985028 client.go:33: skipping tls config
+2025/09/02 04:13:47.985042 client.go:33: skipping tls config
+2025/09/02 04:13:47.985450 network_manager.go:31: INTERNET-ACCESS-REQUEST-TO-API
+2025/09/02 04:13:47.985610 log_handler_app.go:33: Consuming: APP/LOGIN
+2025/09/02 04:13:47.988699 log_handler_app.go:82: Response: APP/LOGIN err: <nil> elapsed: 3.070372ms
+2025/09/02 04:13:47.988790 notifier.go:16: Notify: ONLINE/STATUS_CHANGE
+2025/09/02 04:13:48.021892 log_handler_app.go:33: Consuming: ACCOUNT/ADD
+2025/09/02 04:13:48.021992 log_handler_app.go:82: Response: ACCOUNT/ADD err: <nil> elapsed: 65.22µs
+2025/09/02 04:13:48.051729 network_manager.go:48: INTERNET-ACCESS-RESPONSE-STATUS-FROM-API: 204.
+2025/09/02 04:13:48.051768 notifier.go:16: Notify: ONLINE/STATUS_CHANGE
+2025/09/02 04:13:48.486815 log_handler_app.go:33: Consuming: FEATURE/SET_LIST
+2025/09/02 04:13:48.486943 log_handler_app.go:82: Response: FEATURE/SET_LIST err: <nil> elapsed: 103.82µs
+2025/09/02 04:13:57.678191 log_handler_app.go:33: Consuming: OAUTH/GET_PROVIDER
+2025/09/02 04:13:57.678266 client.go:199: REQUEST-TO-API: GET /v1/users/oauth/providers
+2025/09/02 04:13:57.990725 client.go:210: RESPONSE-FROM-API: GET /v1/users/oauth/providers status: 200. request took: 312.445152ms
+2025/09/02 04:13:57.990833 log_handler_app.go:82: Response: OAUTH/GET_PROVIDER err: <nil> elapsed: 312.605232ms
+2025/09/02 04:13:57.993506 log_handler_app.go:33: Consuming: OAUTH/LOGIN
+2025/09/02 04:13:57.993754 client.go:199: REQUEST-TO-API: POST /v1/users/oauth/login
+2025/09/02 04:13:58.284292 client.go:210: RESPONSE-FROM-API: POST /v1/users/oauth/login status: 200. request took: 290.517795ms
+2025/09/02 04:13:58.284420 log_handler_app.go:82: Response: OAUTH/LOGIN err: <nil> elapsed: 290.890055ms
+2025/09/02 04:14:45.557486 log_handler_app.go:33: Consuming: OAUTH/TOKEN_CHECK
+2025/09/02 04:14:45.557557 client.go:199: REQUEST-TO-API: POST /v1/users/oauth/token
+2025/09/02 04:14:45.756535 client.go:210: RESPONSE-FROM-API: POST /v1/users/oauth/token status: 200. request took: 198.953821ms
+2025/09/02 04:14:45.756653 client.go:199: REQUEST-TO-API: GET /v1/users/current
+2025/09/02 04:14:46.049913 client.go:210: RESPONSE-FROM-API: GET /v1/users/current status: 200. request took: 293.245041ms
+2025/09/02 04:14:46.050211 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:14:46.395354 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 345.13111ms
+2025/09/02 04:14:46.395539 notifier.go:16: Notify: USER/TOKEN_CHANGE
+2025/09/02 04:14:46.395603 log_handler_app.go:82: Response: OAUTH/TOKEN_CHECK err: <nil> elapsed: 838.093986ms
+2025/09/02 04:14:46.395648 notifier.go:14: Notify: USER/STATE_CHANGE map[from:unauthenticated to:master_validate]
+2025/09/02 04:14:46.397006 log_handler_app.go:33: Consuming: ACCOUNT/LIST
+2025/09/02 04:14:46.397032 log_handler_app.go:82: Response: ACCOUNT/LIST err: <nil> elapsed: 8.96µs
+2025/09/02 04:14:46.400892 log_handler_app.go:33: Consuming: USER/DETAILS
+2025/09/02 04:14:46.400912 log_handler_app.go:82: Response: USER/DETAILS err: <nil> elapsed: 4.28µs
+2025/09/02 04:14:46.405646 client.go:199: REQUEST-TO-API: POST /v1/notification/tokens/revoke
+2025/09/02 04:14:46.408219 log_handler_app.go:33: Consuming: ACCOUNT/LIST
+2025/09/02 04:14:46.408266 log_handler_app.go:82: Response: ACCOUNT/LIST err: <nil> elapsed: 12.33µs
+2025/09/02 04:14:46.408631 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 04:14:46.408665 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 6.7µs
+2025/09/02 04:14:46.409023 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 04:14:46.409040 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 3.54µs
+2025/09/02 04:14:46.612447 client.go:210: RESPONSE-FROM-API: POST /v1/notification/tokens/revoke status: 200. request took: 206.76174ms
+2025/09/02 04:14:46.612473 notification_center.go:128: nc token has been revoked
+2025/09/02 04:14:46.869312 log_handler_app.go:33: Consuming: FEATURE/SET_LIST
+2025/09/02 04:14:46.869467 log_handler_app.go:82: Response: FEATURE/SET_LIST err: <nil> elapsed: 119.02µs
+2025/09/02 04:15:04.660745 log_handler_app.go:33: Consuming: MASTER/VALIDATE
+2025/09/02 04:15:04.660841 client.go:199: REQUEST-TO-API: GET /v1/users/current
+2025/09/02 04:15:04.660848 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:15:05.037206 client.go:210: RESPONSE-FROM-API: GET /v1/users/current status: 200. request took: 376.351542ms
+2025/09/02 04:15:05.058598 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 397.733968ms
+2025/09/02 04:15:05.766190 client.go:199: REQUEST-TO-API: GET /v2/users/identities/items
+2025/09/02 04:15:05.809108 client.go:199: REQUEST-TO-API: GET /v2/users/identities/trust
+2025/09/02 04:15:05.809126 client.go:199: REQUEST-TO-API: GET /v2/users/identities/trust/request
+2025/09/02 04:15:05.809128 client.go:199: REQUEST-TO-API: GET /v2/users/identities/items
+2025/09/02 04:15:06.009175 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/trust/request status: 200. request took: 200.031097ms
+2025/09/02 04:15:06.018386 notifier.go:16: Notify: SHARE/TRUST_REQUEST_CHANGE
+2025/09/02 04:15:06.127873 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/trust status: 200. request took: 318.743394ms
+2025/09/02 04:15:06.137206 notifier.go:16: Notify: SHARE/TRUST_CHANGE
+2025/09/02 04:15:06.201869 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/items status: 200. request took: 435.65664ms
+2025/09/02 04:15:07.075450 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/items status: 200. request took: 1.266273224s
+2025/09/02 04:15:08.300864 manager.go:42: start parallel actions
+2025/09/02 04:15:08.301110 client.go:199: REQUEST-TO-API: POST /v1/notification/tokens
+2025/09/02 04:15:08.301117 notifier.go:14: Notify: USER/STATE_CHANGE map[from:master_validate to:authenticated]
+2025/09/02 04:15:08.302416 log_handler_app.go:33: Consuming: EMERGENCY_ACCESS/GET_GIVEN
+2025/09/02 04:15:08.302495 client.go:199: REQUEST-TO-API: GET /v1/emergency/given
+2025/09/02 04:15:08.302604 log_handler_app.go:33: Consuming: EMERGENCY_ACCESS/GET_RECEIVED
+2025/09/02 04:15:08.302683 client.go:199: REQUEST-TO-API: GET /v1/emergency/received
+2025/09/02 04:15:08.302851 log_handler_app.go:33: Consuming: IN_APP_NOTIFICATION/GET
+2025/09/02 04:15:08.302922 client.go:199: REQUEST-TO-API: GET /v1/inapp-notifications
+2025/09/02 04:15:08.303063 log_handler_app.go:33: Consuming: ACCOUNT/LIST
+2025/09/02 04:15:08.303077 log_handler_app.go:82: Response: ACCOUNT/LIST err: <nil> elapsed: 6.75µs
+2025/09/02 04:15:08.303388 log_handler_app.go:33: Consuming: USER/GET_MFA_STATUS
+2025/09/02 04:15:08.303493 client.go:199: REQUEST-TO-API: GET /v2/users/mfa-status
+2025/09/02 04:15:08.303597 log_handler_app.go:33: Consuming: USER/DETAILS
+2025/09/02 04:15:08.303619 log_handler_app.go:82: Response: USER/DETAILS err: <nil> elapsed: 5.27µs
+2025/09/02 04:15:08.304056 log_handler_app.go:33: Consuming: SHARE/LIST
+2025/09/02 04:15:08.304335 log_handler_app.go:33: Consuming: SHARE/GET_PENDING_SHARES
+2025/09/02 04:15:08.304572 log_handler_app.go:33: Consuming: SHARE/TRUST_GET
+2025/09/02 04:15:08.304773 log_handler_app.go:33: Consuming: SHARE/TRUST_REQUEST_GET
+2025/09/02 04:15:08.305251 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 04:15:08.305279 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 6.97µs
+2025/09/02 04:15:08.306146 log_handler_app.go:33: Consuming: STORAGE/INFO
+2025/09/02 04:15:08.306227 client.go:199: REQUEST-TO-API: GET /v2/users/storage/info
+2025/09/02 04:15:08.306785 log_handler_app.go:33: Consuming: ITEM/SEARCH
+2025/09/02 04:15:08.307139 log_handler_app.go:33: Consuming: ORGANIZATION/GET_INVITES
+2025/09/02 04:15:08.307170 log_handler_app.go:82: Response: ORGANIZATION/GET_INVITES err: <nil> elapsed: 7.03µs
+2025/09/02 04:15:08.307454 log_handler_app.go:33: Consuming: SALE_CAMPAIGN/GET
+2025/09/02 04:15:08.307614 client.go:199: REQUEST-TO-API: GET /v1/sale-campaigns/desktop
+2025/09/02 04:15:08.308242 log_handler_app.go:33: Consuming: BUSINESS_AUTH/GET_USER
+2025/09/02 04:15:08.308259 log_handler_app.go:82: Response: BUSINESS_AUTH/GET_USER err: <nil> elapsed: 3.27µs
+2025/09/02 04:15:08.308433 log_handler_app.go:33: Consuming: USER/GET_FIRST_SESSION_REMAINING_TIME
+2025/09/02 04:15:08.308447 log_handler_app.go:82: Response: USER/GET_FIRST_SESSION_REMAINING_TIME err: <nil> elapsed: 2.87µs
+2025/09/02 04:15:08.308588 log_handler_app.go:33: Consuming: USER/SERVICES
+2025/09/02 04:15:08.308604 log_handler_app.go:82: Response: USER/SERVICES err: <nil> elapsed: 3.04µs
+2025/09/02 04:15:08.308808 log_handler_app.go:33: Consuming: RECOVERY/IS_VIEWED
+2025/09/02 04:15:08.308910 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:15:08.309116 log_handler_app.go:33: Consuming: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS
+2025/09/02 04:15:08.309207 client.go:199: REQUEST-TO-API: GET /v1/users/policy-consents
+2025/09/02 04:15:08.309583 log_handler_app.go:33: Consuming: ANALYZER/GET_AUTOFILL_CONTROLS
+2025/09/02 04:15:08.309767 log_handler_app.go:33: Consuming: ANALYZER/GET_AUTOSAVE_CONTROLS
+2025/09/02 04:15:08.309849 log_handler_app.go:82: Response: ANALYZER/GET_AUTOFILL_CONTROLS err: <nil> elapsed: 242.081µs
+2025/09/02 04:15:08.309939 log_handler_app.go:82: Response: ANALYZER/GET_AUTOSAVE_CONTROLS err: <nil> elapsed: 149.511µs
+2025/09/02 04:15:08.327501 log_handler_app.go:33: Consuming: BREACHES/GET_SCANNABLE_ITEMS
+2025/09/02 04:15:08.327632 client.go:199: REQUEST-TO-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches
+2025/09/02 04:15:08.332658 log_handler_app.go:33: Consuming: USER/ONBOARDING_PROGRESS_GET
+2025/09/02 04:15:08.332696 log_handler_app.go:82: Response: USER/ONBOARDING_PROGRESS_GET err: <nil> elapsed: 6.25µs
+2025/09/02 04:15:08.484123 client.go:210: RESPONSE-FROM-API: GET /v1/sale-campaigns/desktop status: 200. request took: 176.493134ms
+2025/09/02 04:15:08.484259 log_handler_app.go:82: Response: SALE_CAMPAIGN/GET err: <nil> elapsed: 176.783885ms
+2025/09/02 04:15:08.496499 client.go:210: RESPONSE-FROM-API: GET /v1/emergency/given status: 200. request took: 193.991565ms
+2025/09/02 04:15:08.496572 log_handler_app.go:82: Response: EMERGENCY_ACCESS/GET_GIVEN err: <nil> elapsed: 194.139465ms
+2025/09/02 04:15:08.514897 client.go:210: RESPONSE-FROM-API: POST /v1/notification/tokens status: 200. request took: 213.767605ms
+2025/09/02 04:15:08.532737 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 223.806972ms
+2025/09/02 04:15:08.532878 log_handler_app.go:82: Response: RECOVERY/IS_VIEWED err: <nil> elapsed: 224.054113ms
+2025/09/02 04:15:08.534232 log_handler_app.go:33: Consuming: USER/ONBOARDING_PROGRESS_UPDATE
+2025/09/02 04:15:08.534280 log_handler_app.go:82: Response: USER/ONBOARDING_PROGRESS_UPDATE err: <nil> elapsed: 31.54µs
+2025/09/02 04:15:08.609527 client.go:210: RESPONSE-FROM-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches status: 200. request took: 281.87839ms
+2025/09/02 04:15:08.609863 log_handler_app.go:82: Response: BREACHES/GET_SCANNABLE_ITEMS err: <nil> elapsed: 282.334071ms
+2025/09/02 04:15:08.641957 client.go:210: RESPONSE-FROM-API: GET /v2/users/mfa-status status: 200. request took: 338.42157ms
+2025/09/02 04:15:08.642061 log_handler_app.go:82: Response: USER/GET_MFA_STATUS err: <nil> elapsed: 338.661692ms
+2025/09/02 04:15:08.660671 client.go:210: RESPONSE-FROM-API: GET /v1/users/policy-consents status: 200. request took: 351.45257ms
+2025/09/02 04:15:08.660852 log_handler_app.go:82: Response: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS err: <nil> elapsed: 351.728531ms
+2025/09/02 04:15:08.679037 client.go:210: RESPONSE-FROM-API: GET /v2/users/storage/info status: 200. request took: 372.797869ms
+2025/09/02 04:15:08.679186 log_handler_app.go:82: Response: STORAGE/INFO err: <nil> elapsed: 373.0266ms
+2025/09/02 04:15:08.698206 client.go:210: RESPONSE-FROM-API: GET /v1/emergency/received status: 200. request took: 395.511593ms
+2025/09/02 04:15:08.698311 log_handler_app.go:82: Response: EMERGENCY_ACCESS/GET_RECEIVED err: <nil> elapsed: 395.689064ms
+2025/09/02 04:15:08.701349 client.go:210: RESPONSE-FROM-API: GET /v1/inapp-notifications status: 200. request took: 398.417497ms
+2025/09/02 04:15:08.701449 log_handler_app.go:82: Response: IN_APP_NOTIFICATION/GET err: <nil> elapsed: 398.583557ms
+2025/09/02 04:15:08.888529 notification_center.go:106: successfully connected to nc
+2025/09/02 04:15:09.327649 log_handler_app.go:82: Response: MASTER/VALIDATE err: <nil> elapsed: 4.666866764s
+2025/09/02 04:15:09.435306 client.go:199: REQUEST-TO-API: POST /v1/users/actions
+2025/09/02 04:15:09.668644 client.go:210: RESPONSE-FROM-API: POST /v1/users/actions status: 200. request took: 233.307776ms
+2025/09/02 04:15:10.423570 log_handler_app.go:82: Response: SHARE/TRUST_GET err: <nil> elapsed: 2.118850658s
+2025/09/02 04:15:10.424859 log_handler_app.go:82: Response: SHARE/TRUST_REQUEST_GET err: <nil> elapsed: 2.120075824s
+2025/09/02 04:15:10.425586 log_handler_app.go:82: Response: SHARE/GET_PENDING_SHARES err: <nil> elapsed: 2.121235429s
+2025/09/02 04:15:10.425968 log_handler_app.go:82: Response: SHARE/LIST err: <nil> elapsed: 2.121899322s
+2025/09/02 04:15:10.433158 notifier.go:16: Notify: VAULT/CHANGE
+2025/09/02 04:15:10.450167 log_handler_app.go:82: Response: ITEM/SEARCH err: <nil> elapsed: 2.143366694s
+2025/09/02 04:15:19.979793 log_handler_app.go:33: Consuming: OAUTH/TOKEN_CHECK
+2025/09/02 04:15:19.979936 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:15:20.134691 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 154.74062ms
+2025/09/02 04:15:20.134843 notifier.go:14: Notify: USER/STATE_CHANGE map[from:authenticated to:master_validate]
+2025/09/02 04:15:20.134877 log_handler_app.go:82: Response: OAUTH/TOKEN_CHECK err: <nil> elapsed: 155.056782ms
+2025/09/02 04:15:20.136486 log_handler_app.go:33: Consuming: ACCOUNT/LIST
+2025/09/02 04:15:20.136516 log_handler_app.go:82: Response: ACCOUNT/LIST err: <nil> elapsed: 9.54µs
+2025/09/02 04:15:20.136659 log_handler_app.go:33: Consuming: USER/DETAILS
+2025/09/02 04:15:20.136676 log_handler_app.go:82: Response: USER/DETAILS err: <nil> elapsed: 2.83µs
+2025/09/02 04:15:20.137175 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 04:15:20.137198 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 6.031µs
+2025/09/02 04:15:20.145223 client.go:199: REQUEST-TO-API: POST /v1/notification/tokens/revoke
+2025/09/02 04:15:20.147415 log_handler_app.go:33: Consuming: SYNC/USER_ACTIONS
+2025/09/02 04:15:20.147625 log_handler_app.go:82: Response: SYNC/USER_ACTIONS err: <nil> elapsed: 178.801µs
+2025/09/02 04:15:20.339144 client.go:210: RESPONSE-FROM-API: POST /v1/notification/tokens/revoke status: 200. request took: 193.886661ms
+2025/09/02 04:15:20.339170 notification_center.go:128: nc token has been revoked
+2025/09/02 04:15:21.355068 client.go:694: [client]   Connect comms goroutine - error triggered EOF
+2025/09/02 04:15:21.355157 client.go:551: [client]   BUG BUG BUG reconnection function is nil <nil>
+2025/09/02 04:15:21.355171 client_app.go:35: connection to nc lost:  EOF
+2025/09/02 04:15:21.355191 notification_center.go:66: reconnectCount 1, reconnecting to nc in 5s
+2025/09/02 04:15:26.355269 client_app.go:76: disconnect from nc
+2025/09/02 04:15:27.013061 client.go:275: [client]   Failed to connect to a broker
+2025/09/02 04:15:27.013096 notification_center.go:97: failed to connect to nc not Authorized
+2025/09/02 04:15:27.013223 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:15:27.426503 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 413.269229ms
+2025/09/02 04:15:32.427251 manager.go:42: start parallel actions
+2025/09/02 04:15:32.427252 handler.go:110: stop dispatcher cron
+2025/09/02 04:15:32.427274 notification_center.go:181: stop nc reconnect
+2025/09/02 04:15:32.427273 notification_center.go:168: stop nc reconnect with delay
+2025/09/02 04:15:32.427350 handler.go:110: stop dispatcher cron
+2025/09/02 04:15:32.427358 handler.go:81: stop sync manager
+2025/09/02 04:15:32.427513 client.go:199: REQUEST-TO-API: POST /v1/notification/tokens
+2025/09/02 04:15:32.631373 client.go:210: RESPONSE-FROM-API: POST /v1/notification/tokens status: 200. request took: 203.85004ms
+2025/09/02 04:15:32.987500 notification_center.go:106: successfully connected to nc
+2025/09/02 04:15:38.810366 log_handler_app.go:33: Consuming: MASTER/VALIDATE
+2025/09/02 04:15:38.810491 client.go:199: REQUEST-TO-API: GET /v1/users/current
+2025/09/02 04:15:38.810922 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:15:38.989364 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 178.426429ms
+2025/09/02 04:15:39.046948 client.go:210: RESPONSE-FROM-API: GET /v1/users/current status: 200. request took: 236.44245ms
+2025/09/02 04:15:39.537568 client.go:199: REQUEST-TO-API: GET /v2/users/identities/items
+2025/09/02 04:15:39.537574 notifier.go:14: Notify: USER/STATE_CHANGE map[from:master_validate to:authenticated]
+2025/09/02 04:15:39.537683 client.go:199: REQUEST-TO-API: GET /v2/users/identities/trust/request
+2025/09/02 04:15:39.537685 client.go:199: REQUEST-TO-API: GET /v2/users/identities/items
+2025/09/02 04:15:39.537701 client.go:199: REQUEST-TO-API: GET /v2/users/identities/trust
+2025/09/02 04:15:39.538621 log_handler_app.go:33: Consuming: EMERGENCY_ACCESS/GET_GIVEN
+2025/09/02 04:15:39.538691 client.go:199: REQUEST-TO-API: GET /v1/emergency/given
+2025/09/02 04:15:39.538757 log_handler_app.go:33: Consuming: EMERGENCY_ACCESS/GET_RECEIVED
+2025/09/02 04:15:39.538835 client.go:199: REQUEST-TO-API: GET /v1/emergency/received
+2025/09/02 04:15:39.538910 log_handler_app.go:33: Consuming: IN_APP_NOTIFICATION/GET
+2025/09/02 04:15:39.538964 client.go:199: REQUEST-TO-API: GET /v1/inapp-notifications
+2025/09/02 04:15:39.539078 log_handler_app.go:33: Consuming: ACCOUNT/LIST
+2025/09/02 04:15:39.539095 log_handler_app.go:82: Response: ACCOUNT/LIST err: <nil> elapsed: 8.08µs
+2025/09/02 04:15:39.539512 log_handler_app.go:33: Consuming: USER/GET_MFA_STATUS
+2025/09/02 04:15:39.539534 log_handler_app.go:33: Consuming: USER/DETAILS
+2025/09/02 04:15:39.539558 log_handler_app.go:82: Response: USER/DETAILS err: <nil> elapsed: 6.32µs
+2025/09/02 04:15:39.539600 client.go:199: REQUEST-TO-API: GET /v2/users/mfa-status
+2025/09/02 04:15:39.539739 log_handler_app.go:33: Consuming: SHARE/LIST
+2025/09/02 04:15:39.539892 log_handler_app.go:33: Consuming: SHARE/GET_PENDING_SHARES
+2025/09/02 04:15:39.540142 log_handler_app.go:33: Consuming: SHARE/TRUST_GET
+2025/09/02 04:15:39.540368 log_handler_app.go:33: Consuming: SHARE/TRUST_REQUEST_GET
+2025/09/02 04:15:39.541054 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 04:15:39.541086 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 5.95µs
+2025/09/02 04:15:39.541650 log_handler_app.go:33: Consuming: STORAGE/INFO
+2025/09/02 04:15:39.541767 client.go:199: REQUEST-TO-API: GET /v2/users/storage/info
+2025/09/02 04:15:39.542200 log_handler_app.go:33: Consuming: ITEM/SEARCH
+2025/09/02 04:15:39.543084 log_handler_app.go:33: Consuming: ORGANIZATION/GET_INVITES
+2025/09/02 04:15:39.543112 log_handler_app.go:82: Response: ORGANIZATION/GET_INVITES err: <nil> elapsed: 4.7µs
+2025/09/02 04:15:39.543362 log_handler_app.go:33: Consuming: SALE_CAMPAIGN/GET
+2025/09/02 04:15:39.543493 client.go:199: REQUEST-TO-API: GET /v1/sale-campaigns/desktop
+2025/09/02 04:15:39.543662 log_handler_app.go:33: Consuming: USER/ONBOARDING_PROGRESS_GET
+2025/09/02 04:15:39.543683 log_handler_app.go:82: Response: USER/ONBOARDING_PROGRESS_GET err: <nil> elapsed: 3.42µs
+2025/09/02 04:15:39.543798 log_handler_app.go:82: Response: SHARE/LIST err: <nil> elapsed: 4.035023ms
+2025/09/02 04:15:39.544933 log_handler_app.go:33: Consuming: BUSINESS_AUTH/GET_USER
+2025/09/02 04:15:39.544955 log_handler_app.go:82: Response: BUSINESS_AUTH/GET_USER err: <nil> elapsed: 2.83µs
+2025/09/02 04:15:39.545049 log_handler_app.go:33: Consuming: USER/GET_FIRST_SESSION_REMAINING_TIME
+2025/09/02 04:15:39.545058 log_handler_app.go:82: Response: USER/GET_FIRST_SESSION_REMAINING_TIME err: <nil> elapsed: 2.39µs
+2025/09/02 04:15:39.545059 log_handler_app.go:33: Consuming: USER/SERVICES
+2025/09/02 04:15:39.545070 log_handler_app.go:82: Response: USER/SERVICES err: <nil> elapsed: 3.23µs
+2025/09/02 04:15:39.545217 log_handler_app.go:33: Consuming: RECOVERY/IS_VIEWED
+2025/09/02 04:15:39.545430 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:15:39.546736 log_handler_app.go:33: Consuming: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS
+2025/09/02 04:15:39.546764 client.go:191: return cached response: GET /v1/users/policy-consents
+2025/09/02 04:15:39.546845 log_handler_app.go:82: Response: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS err: <nil> elapsed: 89.961µs
+2025/09/02 04:15:39.546845 log_handler_app.go:33: Consuming: ANALYZER/GET_AUTOFILL_CONTROLS
+2025/09/02 04:15:39.546889 log_handler_app.go:33: Consuming: ANALYZER/GET_AUTOSAVE_CONTROLS
+2025/09/02 04:15:39.564733 log_handler_app.go:33: Consuming: BREACHES/GET_SCANNABLE_ITEMS
+2025/09/02 04:15:39.564906 client.go:199: REQUEST-TO-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches
+2025/09/02 04:15:39.660729 log_handler_app.go:82: Response: SHARE/GET_PENDING_SHARES err: <nil> elapsed: 120.803878ms
+2025/09/02 04:15:39.663744 log_handler_app.go:82: Response: SHARE/TRUST_REQUEST_GET err: <nil> elapsed: 123.349304ms
+2025/09/02 04:15:39.663996 log_handler_app.go:82: Response: SHARE/TRUST_GET err: <nil> elapsed: 123.837576ms
+2025/09/02 04:15:39.685970 log_handler_app.go:82: Response: ITEM/SEARCH err: <nil> elapsed: 143.753723ms
+2025/09/02 04:15:39.690511 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/trust/request status: 200. request took: 152.812036ms
+2025/09/02 04:15:39.702234 notifier.go:16: Notify: SHARE/TRUST_REQUEST_CHANGE
+2025/09/02 04:15:39.707392 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/items status: 200. request took: 169.690885ms
+2025/09/02 04:15:39.733534 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/trust status: 200. request took: 195.817689ms
+2025/09/02 04:15:39.735683 client.go:210: RESPONSE-FROM-API: GET /v1/inapp-notifications status: 200. request took: 196.712123ms
+2025/09/02 04:15:39.735778 log_handler_app.go:82: Response: IN_APP_NOTIFICATION/GET err: <nil> elapsed: 196.860724ms
+2025/09/02 04:15:39.738013 client.go:210: RESPONSE-FROM-API: GET /v1/sale-campaigns/desktop status: 200. request took: 194.508041ms
+2025/09/02 04:15:39.738102 log_handler_app.go:82: Response: SALE_CAMPAIGN/GET err: <nil> elapsed: 194.730591ms
+2025/09/02 04:15:39.744800 manager.go:42: start parallel actions
+2025/09/02 04:15:39.744837 notifier.go:16: Notify: SHARE/TRUST_CHANGE
+2025/09/02 04:15:39.745046 client.go:199: REQUEST-TO-API: POST /v1/notification/tokens
+2025/09/02 04:15:39.755969 log_handler_app.go:82: Response: MASTER/VALIDATE err: <nil> elapsed: 945.568507ms
+2025/09/02 04:15:39.756608 client.go:199: REQUEST-TO-API: POST /v1/users/actions
+2025/09/02 04:15:39.761602 client.go:210: RESPONSE-FROM-API: GET /v1/emergency/received status: 200. request took: 222.759466ms
+2025/09/02 04:15:39.761665 log_handler_app.go:82: Response: EMERGENCY_ACCESS/GET_RECEIVED err: <nil> elapsed: 222.890637ms
+2025/09/02 04:15:39.766952 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 221.510379ms
+2025/09/02 04:15:39.767026 log_handler_app.go:82: Response: RECOVERY/IS_VIEWED err: <nil> elapsed: 221.71744ms
+2025/09/02 04:15:39.775628 client.go:210: RESPONSE-FROM-API: GET /v1/emergency/given status: 200. request took: 236.924619ms
+2025/09/02 04:15:39.775721 log_handler_app.go:82: Response: EMERGENCY_ACCESS/GET_GIVEN err: <nil> elapsed: 237.08661ms
+2025/09/02 04:15:39.782363 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/items status: 200. request took: 244.765945ms
+2025/09/02 04:15:39.782729 log_handler_app.go:82: Response: ANALYZER/GET_AUTOFILL_CONTROLS err: <nil> elapsed: 235.867403ms
+2025/09/02 04:15:39.782816 log_handler_app.go:82: Response: ANALYZER/GET_AUTOSAVE_CONTROLS err: <nil> elapsed: 235.919444ms
+2025/09/02 04:15:39.792903 client.go:210: RESPONSE-FROM-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches status: 200. request took: 227.982527ms
+2025/09/02 04:15:39.793072 log_handler_app.go:82: Response: BREACHES/GET_SCANNABLE_ITEMS err: <nil> elapsed: 228.312199ms
+2025/09/02 04:15:39.803282 client.go:210: RESPONSE-FROM-API: GET /v2/users/storage/info status: 200. request took: 261.501284ms
+2025/09/02 04:15:39.803406 log_handler_app.go:82: Response: STORAGE/INFO err: <nil> elapsed: 261.744494ms
+2025/09/02 04:15:39.951021 client.go:210: RESPONSE-FROM-API: POST /v1/notification/tokens status: 200. request took: 205.959708ms
+2025/09/02 04:15:39.951162 notification_center.go:168: stop nc reconnect with delay
+2025/09/02 04:15:39.951180 notification_center.go:181: stop nc reconnect
+2025/09/02 04:15:39.951205 client_app.go:76: disconnect from nc
+2025/09/02 04:15:39.995501 client.go:210: RESPONSE-FROM-API: GET /v2/users/mfa-status status: 200. request took: 455.891474ms
+2025/09/02 04:15:39.995572 log_handler_app.go:82: Response: USER/GET_MFA_STATUS err: <nil> elapsed: 456.046475ms
+2025/09/02 04:15:40.000802 client.go:210: RESPONSE-FROM-API: POST /v1/users/actions status: 200. request took: 244.171293ms
+2025/09/02 04:15:40.288495 notification_center.go:106: successfully connected to nc
+2025/09/02 04:15:42.673404 log_handler_app.go:33: Consuming: ACTION/SAVE
+2025/09/02 04:15:42.673476 log_handler_app.go:82: Response: ACTION/SAVE err: <nil> elapsed: 39.71µs
+2025/09/02 04:15:45.300534 log_handler_app.go:33: Consuming: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS
+2025/09/02 04:15:45.300586 client.go:191: return cached response: GET /v1/users/policy-consents
+2025/09/02 04:15:45.300660 log_handler_app.go:82: Response: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS err: <nil> elapsed: 88.63µs
+2025/09/02 04:22:39.746042 client.go:199: REQUEST-TO-API: POST /v1/users/actions
+2025/09/02 04:22:40.033838 client.go:210: RESPONSE-FROM-API: POST /v1/users/actions status: 200. request took: 287.762904ms
+2025/09/02 04:24:30.413194 log_handler_app.go:33: Consuming: ITEM/GET
+2025/09/02 04:24:30.429877 notifier.go:16: Notify: VAULT/CHANGE
+2025/09/02 04:24:30.435119 log_handler_app.go:33: Consuming: ITEM/GET
+2025/09/02 04:24:30.444423 log_handler_app.go:33: Consuming: ITEM_ACCESS_ACTION/SAVE
+2025/09/02 04:24:30.449357 log_handler_app.go:82: Response: ITEM/GET err: <nil> elapsed: 36.136029ms
+2025/09/02 04:24:31.436141 notifier.go:16: Notify: VAULT/CHANGE
+2025/09/02 04:24:31.459519 log_handler_app.go:82: Response: ITEM/GET err: <nil> elapsed: 1.024376327s
+2025/09/02 04:24:31.484229 log_handler_app.go:33: Consuming: ITEM/REUSED_PASSWORD_COUNT
+2025/09/02 04:24:31.506817 log_handler_app.go:82: Response: ITEM/REUSED_PASSWORD_COUNT err: <nil> elapsed: 22.552584ms
+2025/09/02 04:24:32.454222 log_handler_app.go:82: Response: ITEM_ACCESS_ACTION/SAVE err: <nil> elapsed: 2.009781158s
+2025/09/02 04:24:35.892065 log_handler_app.go:33: Consuming: ACTION/SAVE
+2025/09/02 04:24:35.892102 log_handler_app.go:82: Response: ACTION/SAVE err: <nil> elapsed: 14.301µs
+2025/09/02 04:24:36.093406 log_handler_app.go:33: Consuming: ITEM_ACCESS_ACTION/SAVE
+2025/09/02 04:24:36.102668 log_handler_app.go:82: Response: ITEM_ACCESS_ACTION/SAVE err: <nil> elapsed: 9.241863ms
+2025/09/02 04:24:41.953879 log_handler_app.go:33: Consuming: ACTION/SAVE
+2025/09/02 04:24:41.953912 log_handler_app.go:82: Response: ACTION/SAVE err: <nil> elapsed: 12.97µs
+2025/09/02 04:24:42.153867 log_handler_app.go:33: Consuming: ITEM_ACCESS_ACTION/SAVE
+2025/09/02 04:24:42.163367 log_handler_app.go:82: Response: ITEM_ACCESS_ACTION/SAVE err: <nil> elapsed: 9.463777ms
+2025/09/02 04:25:39.745849 client.go:199: REQUEST-TO-API: POST /v1/users/vault/items/logs
+2025/09/02 04:25:39.927161 client.go:210: RESPONSE-FROM-API: POST /v1/users/vault/items/logs status: 200. request took: 181.284796ms
+2025/09/02 04:29:39.745764 client.go:199: REQUEST-TO-API: POST /v1/users/actions
+2025/09/02 04:29:40.021780 client.go:210: RESPONSE-FROM-API: POST /v1/users/actions status: 200. request took: 275.978878ms
+2025/09/02 04:48:26.611293 transport.go:119: stop reading messages  eof
+2025/09/02 04:48:26.611975 shutdown.go:40: app shutting down...
+2025/09/02 04:48:26.611997 client_app.go:76: disconnect from nc
+2025/09/02 04:48:26.612007 notification_center.go:168: stop nc reconnect with delay
+2025/09/02 04:48:26.612023 notification_center.go:181: stop nc reconnect
+2025/09/02 04:48:26.612060 handler.go:81: stop sync manager
+2025/09/02 04:48:26.612076 handler.go:110: stop dispatcher cron
+2025/09/02 04:48:26.612104 client.go:199: REQUEST-TO-API: POST /v2/users/identities/items/last-used
+2025/09/02 04:53:43.992046 config.go:50: starting app. {"api_base_url":"https://api.nordpass.com","app_version":"4.453.4","os":"linux","os_arch":"amd64","tls_enabled":false,"version":"6.4.8"}
+2025/09/02 04:53:44.012231 remote.go:58: TIME-SYNC-REQUEST-TO-API
+2025/09/02 04:53:44.252687 remote.go:65: TIME-SYNC-RESPONSE-STATUS-FROM-API: 200.
+2025/09/02 04:53:44.252796 client.go:33: skipping tls config
+2025/09/02 04:53:44.252810 client.go:33: skipping tls config
+2025/09/02 04:53:44.253234 log_handler_app.go:33: Consuming: APP/LOGIN
+2025/09/02 04:53:44.256444 network_manager.go:31: INTERNET-ACCESS-REQUEST-TO-API
+2025/09/02 04:53:44.257290 log_handler_app.go:82: Response: APP/LOGIN err: <nil> elapsed: 4.010878ms
+2025/09/02 04:53:44.257427 notifier.go:16: Notify: ONLINE/STATUS_CHANGE
+2025/09/02 04:53:44.270402 log_handler_app.go:33: Consuming: ACCOUNT/ADD
+2025/09/02 04:53:44.270545 client.go:199: REQUEST-TO-API: GET /v1/users/tokens/verify-token
+2025/09/02 04:53:44.315479 network_manager.go:48: INTERNET-ACCESS-RESPONSE-STATUS-FROM-API: 204.
+2025/09/02 04:53:44.315587 notifier.go:16: Notify: ONLINE/STATUS_CHANGE
+2025/09/02 04:53:44.434190 client.go:210: RESPONSE-FROM-API: GET /v1/users/tokens/verify-token status: 200. request took: 163.629302ms
+2025/09/02 04:53:44.434251 client.go:199: REQUEST-TO-API: GET /v1/users/current
+2025/09/02 04:53:44.827972 client.go:210: RESPONSE-FROM-API: GET /v1/users/current status: 200. request took: 393.706803ms
+2025/09/02 04:53:44.828415 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:53:44.974681 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 146.244996ms
+2025/09/02 04:53:44.974890 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:53:44.974981 notifier.go:14: Notify: USER/STATE_CHANGE map[from:unauthenticated to:master_validate]
+2025/09/02 04:53:45.143422 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 168.510196ms
+2025/09/02 04:53:45.143626 log_handler_app.go:82: Response: ACCOUNT/ADD err: <nil> elapsed: 873.184267ms
+2025/09/02 04:53:45.148286 log_handler_app.go:33: Consuming: FEATURE/SET_LIST
+2025/09/02 04:53:45.148524 log_handler_app.go:82: Response: FEATURE/SET_LIST err: <nil> elapsed: 189.042µs
+2025/09/02 04:53:45.150695 log_handler_app.go:33: Consuming: USER/DETAILS
+2025/09/02 04:53:45.150746 log_handler_app.go:82: Response: USER/DETAILS err: <nil> elapsed: 9.3µs
+2025/09/02 04:53:45.179084 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 04:53:45.179139 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 11.2µs
+2025/09/02 04:53:45.575237 log_handler_app.go:33: Consuming: FEATURE/SET_LIST
+2025/09/02 04:53:45.575428 log_handler_app.go:82: Response: FEATURE/SET_LIST err: <nil> elapsed: 141.451µs
+2025/09/02 04:54:00.522867 log_handler_app.go:33: Consuming: MASTER/VALIDATE
+2025/09/02 04:54:00.523017 client.go:199: REQUEST-TO-API: GET /v1/users/current
+2025/09/02 04:54:00.523156 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:54:00.728905 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 205.722046ms
+2025/09/02 04:54:00.751418 client.go:210: RESPONSE-FROM-API: GET /v1/users/current status: 200. request took: 228.370445ms
+2025/09/02 04:54:01.583384 client.go:199: REQUEST-TO-API: GET /v2/users/identities/items
+2025/09/02 04:54:01.584082 client.go:199: REQUEST-TO-API: GET /v2/users/identities/items
+2025/09/02 04:54:01.584177 notifier.go:14: Notify: USER/STATE_CHANGE map[from:master_validate to:authenticated]
+2025/09/02 04:54:01.584331 client.go:199: REQUEST-TO-API: GET /v2/users/identities/trust/request
+2025/09/02 04:54:01.584654 client.go:199: REQUEST-TO-API: GET /v2/users/identities/trust
+2025/09/02 04:54:01.586457 log_handler_app.go:33: Consuming: EMERGENCY_ACCESS/GET_GIVEN
+2025/09/02 04:54:01.586676 client.go:199: REQUEST-TO-API: GET /v1/emergency/given
+2025/09/02 04:54:01.587321 log_handler_app.go:33: Consuming: EMERGENCY_ACCESS/GET_RECEIVED
+2025/09/02 04:54:01.587490 client.go:199: REQUEST-TO-API: GET /v1/emergency/received
+2025/09/02 04:54:01.588353 log_handler_app.go:33: Consuming: IN_APP_NOTIFICATION/GET
+2025/09/02 04:54:01.588558 client.go:199: REQUEST-TO-API: GET /v1/inapp-notifications
+2025/09/02 04:54:01.590189 log_handler_app.go:33: Consuming: ACCOUNT/LIST
+2025/09/02 04:54:01.590250 log_handler_app.go:82: Response: ACCOUNT/LIST err: <nil> elapsed: 15.361µs
+2025/09/02 04:54:01.595795 log_handler_app.go:33: Consuming: USER/GET_MFA_STATUS
+2025/09/02 04:54:01.595953 client.go:199: REQUEST-TO-API: GET /v2/users/mfa-status
+2025/09/02 04:54:01.596670 log_handler_app.go:33: Consuming: USER/DETAILS
+2025/09/02 04:54:01.596698 log_handler_app.go:82: Response: USER/DETAILS err: <nil> elapsed: 5.44µs
+2025/09/02 04:54:01.596745 log_handler_app.go:33: Consuming: SHARE/LIST
+2025/09/02 04:54:01.603645 log_handler_app.go:33: Consuming: SHARE/TRUST_GET
+2025/09/02 04:54:01.603733 log_handler_app.go:33: Consuming: SHARE/TRUST_REQUEST_GET
+2025/09/02 04:54:01.603794 log_handler_app.go:33: Consuming: SHARE/GET_PENDING_SHARES
+2025/09/02 04:54:01.603863 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 04:54:01.603904 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 13.01µs
+2025/09/02 04:54:01.605583 log_handler_app.go:33: Consuming: STORAGE/INFO
+2025/09/02 04:54:01.605761 client.go:199: REQUEST-TO-API: GET /v2/users/storage/info
+2025/09/02 04:54:01.606246 log_handler_app.go:82: Response: SHARE/LIST err: <nil> elapsed: 9.491108ms
+2025/09/02 04:54:01.607615 log_handler_app.go:33: Consuming: ITEM/SEARCH
+2025/09/02 04:54:01.612777 log_handler_app.go:33: Consuming: ORGANIZATION/GET_INVITES
+2025/09/02 04:54:01.612825 log_handler_app.go:82: Response: ORGANIZATION/GET_INVITES err: <nil> elapsed: 7.38µs
+2025/09/02 04:54:01.615749 log_handler_app.go:33: Consuming: SALE_CAMPAIGN/GET
+2025/09/02 04:54:01.615944 client.go:199: REQUEST-TO-API: GET /v1/sale-campaigns/desktop
+2025/09/02 04:54:01.616229 log_handler_app.go:33: Consuming: USER/ONBOARDING_PROGRESS_GET
+2025/09/02 04:54:01.616257 log_handler_app.go:33: Consuming: USER/GET_FIRST_SESSION_REMAINING_TIME
+2025/09/02 04:54:01.616276 log_handler_app.go:82: Response: USER/ONBOARDING_PROGRESS_GET err: <nil> elapsed: 12.02µs
+2025/09/02 04:54:01.616286 log_handler_app.go:82: Response: USER/GET_FIRST_SESSION_REMAINING_TIME err: <nil> elapsed: 9.68µs
+2025/09/02 04:54:01.616236 log_handler_app.go:33: Consuming: BUSINESS_AUTH/GET_USER
+2025/09/02 04:54:01.616617 log_handler_app.go:82: Response: BUSINESS_AUTH/GET_USER err: <nil> elapsed: 101.221µs
+2025/09/02 04:54:01.616955 log_handler_app.go:33: Consuming: USER/SERVICES
+2025/09/02 04:54:01.616971 log_handler_app.go:82: Response: USER/SERVICES err: <nil> elapsed: 4.07µs
+2025/09/02 04:54:01.622684 log_handler_app.go:33: Consuming: RECOVERY/IS_VIEWED
+2025/09/02 04:54:01.622873 client.go:199: REQUEST-TO-API: GET /v2/users/identities
+2025/09/02 04:54:01.624366 log_handler_app.go:33: Consuming: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS
+2025/09/02 04:54:01.624393 log_handler_app.go:33: Consuming: ANALYZER/GET_AUTOFILL_CONTROLS
+2025/09/02 04:54:01.624365 log_handler_app.go:33: Consuming: ANALYZER/GET_AUTOSAVE_CONTROLS
+2025/09/02 04:54:01.624566 client.go:199: REQUEST-TO-API: GET /v1/users/policy-consents
+2025/09/02 04:54:01.651383 log_handler_app.go:82: Response: ITEM/SEARCH err: <nil> elapsed: 43.719524ms
+2025/09/02 04:54:01.653395 log_handler_app.go:33: Consuming: BREACHES/GET_SCANNABLE_ITEMS
+2025/09/02 04:54:01.653576 client.go:199: REQUEST-TO-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches
+2025/09/02 04:54:01.773959 log_handler_app.go:82: Response: SHARE/TRUST_GET err: <nil> elapsed: 170.256215ms
+2025/09/02 04:54:01.777006 log_handler_app.go:82: Response: SHARE/GET_PENDING_SHARES err: <nil> elapsed: 173.176852ms
+2025/09/02 04:54:01.788384 log_handler_app.go:82: Response: SHARE/TRUST_REQUEST_GET err: <nil> elapsed: 184.605568ms
+2025/09/02 04:54:01.794975 client.go:210: RESPONSE-FROM-API: GET /v1/emergency/received status: 200. request took: 207.46512ms
+2025/09/02 04:54:01.795083 log_handler_app.go:82: Response: EMERGENCY_ACCESS/GET_RECEIVED err: <nil> elapsed: 207.729132ms
+2025/09/02 04:54:01.817739 client.go:210: RESPONSE-FROM-API: GET /v1/inapp-notifications status: 200. request took: 229.15943ms
+2025/09/02 04:54:01.817926 log_handler_app.go:82: Response: IN_APP_NOTIFICATION/GET err: <nil> elapsed: 229.529724ms
+2025/09/02 04:54:01.860760 client.go:210: RESPONSE-FROM-API: GET /v1/users/policy-consents status: 200. request took: 236.171145ms
+2025/09/02 04:54:01.861067 log_handler_app.go:82: Response: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS err: <nil> elapsed: 236.657879ms
+2025/09/02 04:54:01.867944 client.go:210: RESPONSE-FROM-API: GET /v1/sale-campaigns/desktop status: 200. request took: 251.980242ms
+2025/09/02 04:54:01.868193 log_handler_app.go:82: Response: SALE_CAMPAIGN/GET err: <nil> elapsed: 252.407055ms
+2025/09/02 04:54:01.870844 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/trust status: 200. request took: 286.133887ms
+2025/09/02 04:54:01.881355 client.go:210: RESPONSE-FROM-API: GET /v2/users/mfa-status status: 200. request took: 285.381381ms
+2025/09/02 04:54:01.881571 log_handler_app.go:82: Response: USER/GET_MFA_STATUS err: <nil> elapsed: 285.739554ms
+2025/09/02 04:54:01.884764 notifier.go:16: Notify: SHARE/TRUST_CHANGE
+2025/09/02 04:54:01.886987 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/trust/request status: 200. request took: 302.63538ms
+2025/09/02 04:54:01.903408 notifier.go:16: Notify: SHARE/TRUST_REQUEST_CHANGE
+2025/09/02 04:54:01.969342 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/items status: 200. request took: 385.87931ms
+2025/09/02 04:54:01.970192 log_handler_app.go:82: Response: ANALYZER/GET_AUTOFILL_CONTROLS err: <nil> elapsed: 345.780419ms
+2025/09/02 04:54:01.972450 log_handler_app.go:82: Response: ANALYZER/GET_AUTOSAVE_CONTROLS err: <nil> elapsed: 347.96123ms
+2025/09/02 04:54:01.997541 client.go:210: RESPONSE-FROM-API: GET /v1/emergency/given status: 200. request took: 410.842921ms
+2025/09/02 04:54:01.997709 log_handler_app.go:82: Response: EMERGENCY_ACCESS/GET_GIVEN err: <nil> elapsed: 411.204065ms
+2025/09/02 04:54:02.025465 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities status: 200. request took: 402.569415ms
+2025/09/02 04:54:02.025780 log_handler_app.go:82: Response: RECOVERY/IS_VIEWED err: <nil> elapsed: 403.050159ms
+2025/09/02 04:54:02.113569 client.go:210: RESPONSE-FROM-API: GET /v2/users/storage/info status: 200. request took: 507.781697ms
+2025/09/02 04:54:02.113769 log_handler_app.go:82: Response: STORAGE/INFO err: <nil> elapsed: 508.14988ms
+2025/09/02 04:54:02.125153 client.go:210: RESPONSE-FROM-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches status: 200. request took: 471.555282ms
+2025/09/02 04:54:02.125563 log_handler_app.go:82: Response: BREACHES/GET_SCANNABLE_ITEMS err: <nil> elapsed: 472.135677ms
+2025/09/02 04:54:02.277942 client.go:210: RESPONSE-FROM-API: GET /v2/users/identities/items status: 200. request took: 693.831317ms
+2025/09/02 04:54:02.317940 manager.go:42: start parallel actions
+2025/09/02 04:54:02.318535 client.go:199: REQUEST-TO-API: POST /v1/notification/tokens
+2025/09/02 04:54:02.326957 log_handler_app.go:82: Response: MASTER/VALIDATE err: <nil> elapsed: 1.804021134s
+2025/09/02 04:54:02.327432 client.go:199: REQUEST-TO-API: POST /v1/users/actions
+2025/09/02 04:54:02.527501 client.go:210: RESPONSE-FROM-API: POST /v1/notification/tokens status: 200. request took: 208.941971ms
+2025/09/02 04:54:02.539741 client.go:210: RESPONSE-FROM-API: POST /v1/users/actions status: 200. request took: 212.282522ms
+2025/09/02 04:54:02.876398 notification_center.go:106: successfully connected to nc
+2025/09/02 04:54:23.507614 log_handler_app.go:33: Consuming: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS
+2025/09/02 04:54:23.507677 client.go:191: return cached response: GET /v1/users/policy-consents
+2025/09/02 04:54:23.507768 log_handler_app.go:82: Response: POLICY_CONSENTS/GET_USER_POLICY_CONSENTS err: <nil> elapsed: 105.731µs
+2025/09/02 05:31:09.025721 network_manager.go:31: INTERNET-ACCESS-REQUEST-TO-API
+2025/09/02 05:31:09.025766 notifier.go:16: Notify: ONLINE/STATUS_CHANGE
+2025/09/02 05:31:09.128170 network_manager.go:48: INTERNET-ACCESS-RESPONSE-STATUS-FROM-API: 204.
+2025/09/02 05:31:09.128278 notifier.go:16: Notify: ONLINE/STATUS_CHANGE
+2025/09/02 05:31:09.129295 log_handler_app.go:33: Consuming: ORGANIZATION/GET
+2025/09/02 05:31:09.129314 log_handler_app.go:82: Response: ORGANIZATION/GET err: <nil> elapsed: 3.95µs
+2025/09/02 05:31:09.130247 log_handler_app.go:33: Consuming: ORGANIZATION/GET_INVITES
+2025/09/02 05:31:09.130286 log_handler_app.go:82: Response: ORGANIZATION/GET_INVITES err: <nil> elapsed: 7.54µs
+2025/09/02 05:31:09.142706 log_handler_app.go:33: Consuming: BREACHES/GET_SCANNABLE_ITEMS
+2025/09/02 05:31:09.142882 client.go:199: REQUEST-TO-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches
+2025/09/02 05:31:09.331848 client.go:210: RESPONSE-FROM-API: GET /v2/breach-scanner/users/scannable-items?embed[]=breaches status: 200. request took: 188.954153ms
+2025/09/02 05:31:09.332014 log_handler_app.go:82: Response: BREACHES/GET_SCANNABLE_ITEMS err: <nil> elapsed: 189.274822ms
+2025/09/02 06:05:17.815716 transport.go:119: stop reading messages  shutdown terminated
+2025/09/02 06:05:17.816327 shutdown.go:40: signal shutting down...
+2025/09/02 06:05:17.952196 config.go:50: starting app. {"api_base_url":"https://api.nordpass.com","app_version":"4.453.4","os":"linux","os_arch":"amd64","tls_enabled":false,"version":"6.4.8"}
+2025/09/02 06:05:17.962347 remote.go:58: TIME-SYNC-REQUEST-TO-API
+2025/09/02 06:05:17.969274 config.go:50: starting app. {"api_base_url":"https://api.nordpass.com","app_version":"4.453.4","os":"linux","os_arch":"amd64","tls_enabled":false,"version":"6.4.8"}
+2025/09/02 06:05:17.977945 remote.go:58: TIME-SYNC-REQUEST-TO-API
+2025/09/02 06:05:18.217740 remote.go:65: TIME-SYNC-RESPONSE-STATUS-FROM-API: 200.
+2025/09/02 06:05:18.217823 client.go:33: skipping tls config
+2025/09/02 06:05:18.217834 client.go:33: skipping tls config
+2025/09/02 06:05:18.218081 network_manager.go:31: INTERNET-ACCESS-REQUEST-TO-API
+2025/09/02 06:05:18.218112 transport.go:119: stop reading messages  eof
+2025/09/02 06:05:18.218124 shutdown.go:40: app shutting down...
+2025/09/02 06:05:18.382678 remote.go:65: TIME-SYNC-RESPONSE-STATUS-FROM-API: 200.
+2025/09/02 06:05:18.382752 client.go:33: skipping tls config
+2025/09/02 06:05:18.382762 client.go:33: skipping tls config
+2025/09/02 06:05:18.382976 network_manager.go:31: INTERNET-ACCESS-REQUEST-TO-API
+2025/09/02 06:05:18.383079 router.go:178: failed to send ack: write /dev/stdout: broken pipe
+2025/09/02 06:05:18.383092 transport.go:119: stop reading messages  eof
+2025/09/02 06:05:18.383100 shutdown.go:40: app shutting down...
+2025/09/02 06:05:18.383169 log_handler_app.go:33: Consuming: APP/LOGIN

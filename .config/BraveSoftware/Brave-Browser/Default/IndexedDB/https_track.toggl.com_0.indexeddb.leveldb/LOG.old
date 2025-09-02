@@ -1,0 +1,6 @@
+2025/09/02-17:58:05.638 19e4 Creating DB /home/jp/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_track.toggl.com_0.indexeddb.leveldb since it was missing.
+2025/09/02-17:58:05.647 19e4 Reusing MANIFEST /home/jp/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_track.toggl.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/09/02-17:58:08.749 19e4 Level-0 table #5: started
+2025/09/02-17:58:08.752 19e4 Level-0 table #5: 1703 bytes OK
+2025/09/02-17:58:08.756 19e4 Delete type=0 #3
+2025/09/02-17:58:08.756 19e4 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
