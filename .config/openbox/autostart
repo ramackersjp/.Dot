@@ -24,7 +24,7 @@ bash ~/.config/openbox/themes/launch-bar.sh
 dunst &
 
 ## Launch Plank
-plank &
+(sleep 5 && plank) &
 
 ## Thunar Daemon
 thunar --daemon &
